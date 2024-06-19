@@ -7,7 +7,7 @@ const number = 10;
 
 result = number % 2 === 0;
 
-if (result === 0) {
+if (result < 1) {
   console.log(result, "numero invalido");
 } else if (result) {
   console.log(result, "e Par");
