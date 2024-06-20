@@ -1,18 +1,20 @@
-// variaveis e operadores
-// = (atribuicao)
-// == (comparacao ignorando o tipo da variavel)
-// === (comparacao verificando o tipo de variael)
+let valorGasolina = 5.64;
+let valorAlcool = 3.81;
 
-const number = 10;
+let consumoMedio = 10;
+let kmViagem = 100;
 
-result = number % 2 === 0;
+const tpCombustivel = "Gasolina";
 
-if (result < 1) {
-  console.log(result, "numero invalido");
-} else if (result) {
-  console.log(result, "e Par");
+if (tpCombustivel === "Alcool") {
+  const valorTotalAlcool = (kmViagem / consumoMedio) * valorAlcool;
+
+  console.log("Alcool R$", valorTotalAlcool.toFixed(2));
 } else {
-  console.log(result, " e Impar");
+  const valorTotalGasolina = (kmViagem / consumoMedio) * valorGasolina;
+
+  console.log("Gasolina R$", valorTotalGasolina.toFixed(2));
 }
 
-// console.log(result);
+console.log("Alcool", valorAlcool);
+console.log("Gasolina", valorGasolina);
